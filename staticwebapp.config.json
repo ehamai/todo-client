@@ -2,6 +2,15 @@
   "trailingSlash": "auto",
   "routes": [
     {
+      "route": "/api/foobar",
+      "methods": [
+        "get"
+      ],
+      "headers": {
+        "hello": "world"
+      }
+    },
+    {
       "route": "/api/*",
       "methods": [
         "GET"
@@ -33,15 +42,6 @@
     {
       "route": "/logout",
       "redirect": "/.auth/logout"
-    },
-    {
-      "route": "/api/foobar",
-      "methods": [
-        "get"
-      ],
-      "headers": {
-        "hello": "world"
-      }
     }
   ]
 }
